@@ -1,0 +1,23 @@
+<!--confirm문으로 "당신은 겨울이 좋나요?" 라고 물어보는 문장을 제시하고
+사용자가 "확인" 버튼을 누르면 "이제 당신의 세월이 시작되는 군요"라고 출력시키고,
+"취소"버튼을 누르면 "이제 건강 관리에 유의하고 겨울에 준비하세요."라고 출력하는
+자바스크립트 HTML을 작성하시오.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>과제7_1</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var answer = confirm("당신은 겨울이 좋나요?");
+      if(answer == true){
+        document.write("이제 당신의 세월이 시작되는 군요");
+      }
+      if(answer == false){
+        document.write("이제 건강 관리에 유의하고 겨울에 준비하세요.");
+      }
+    </script>
+  </body>
+</html>

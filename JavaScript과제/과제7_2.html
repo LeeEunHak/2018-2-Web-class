@@ -1,0 +1,21 @@
+<!-- prompt문으로 나이를 입력 받아 20살 이상이면 "어른이시군요. 어떤 술을 좋아하세요?"라고
+출력하는 자바스크립트 HTML을 작성하시오. (20살 미만은 출력 없음.) -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>과제7_2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var age = prompt("나이를 입력해주세요.");
+      if (age >= 20) {
+        document.write("어른이시군요. 어떤 술을 좋아하세요?");
+      }
+      if (age < 20) {
+        document.write("")
+      }
+    </script>
+  </body>
+</html>

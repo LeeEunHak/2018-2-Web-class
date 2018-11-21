@@ -1,0 +1,26 @@
+<!--prompt문으로 나이를 입력 받아 12살 이하면 "어린이 이시군요.", 13살-19살이면 "청소년 이시군요.",
+20살 이상이면 "어른이시군요!"라고 출력하는 자바스크립트 HTML을 작성하시오.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>과제7_6</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var age = prompt("나이를 입력해주세요.");
+      if (age >= 20) {
+        document.write("어른이시군요!");
+      }
+      else {
+        if (age <= 12){
+          document.write("어린이 이시군요.");
+        }
+        else {
+          document.write("청소년 이시군요.");
+        }
+      }
+    </script>
+  </body>
+</html>

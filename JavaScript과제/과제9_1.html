@@ -1,0 +1,22 @@
+<!-- 자신의 웹 페이지 주제와 관련하여 그 그룹이 오늘까지 며칠이 되었는지 등
+Date 객체를 이용하여 출력하는 자바스크립트 HTML을 작성하시오. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>9_1</title>
+  </head>
+  <body>
+    <h3>뉴이스트</h3>
+    <hr>
+    2018년 11월 25일 기준<br>
+    <script type="text/javascript">
+      var start = new Date('2012/03/15');
+      var today = new Date('2018/11/25');
+
+      var diff = (today.getTime() - start.getTime()) / (1000*60*60*24);
+      document.write("데뷔일로부터 " + diff + "일째");
+    </script>
+  </body>
+</html>

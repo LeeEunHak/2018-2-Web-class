@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>12</title>
+  </head>
+  <body>
+    <h2>뉴이스트 팬덤명 캔버스로 표현하기</h2>
+    <hr>
+    <canvas id="myCanvas" width="700" height="400"></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById("myCanvas");
+      var myContext = canvas.getContext("2d");
+
+      <!-- L 그리기 -->
+      myContext.moveTo(50, 50);
+      myContext.lineTo(50, 200);
+      myContext.lineTo(150, 200);
+
+      <!-- O 그리기 -->
+      myContext.moveTo(250, 50);
+      myContext.bezierCurveTo(320, 50, 320, 200, 250, 200)
+      myContext.bezierCurveTo(180, 200, 180, 50, 250, 50)
+
+      <!-- ㅅ 그리기 -->
+      myContext.moveTo(370, 200);
+      myContext.lineTo(420, 50);
+      myContext.lineTo(470, 200);
+
+      <!-- E 그리기 -->
+      myContext.moveTo(630, 50);
+      myContext.lineTo(530, 50);
+      myContext.lineTo(530, 200);
+      myContext.lineTo(630, 200);
+      myContext.moveTo(530, 125);
+      myContext.lineTo(630, 125);
+
+      myContext.stroke();
+    </script>
+  </body>
+</html>

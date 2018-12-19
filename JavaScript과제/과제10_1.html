@@ -1,0 +1,28 @@
+<!-- 키보드로부터 여러 개의 숫자를 입력받아 배열에 저장하고
+그 숫자들 중 최대값을 출력하는 자바스크립트 프로그램을 작성하시오. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>10_1</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var res = prompt("입력할 숫자의 개수를 입력하세요.");
+      var length = parseInt(res);
+      var number = new Array();
+      for(i=0;i<length;i++){
+        var j = prompt((i+1)+"번째 숫자를 입력해주세요.");
+        x = parseInt(j);
+        number[i] = x;
+    }
+    document.write("number = [");
+    for(i=0;i<number.length;i++) document.write(" " + number[i] + " ");
+    document.write("] <br/> ");
+
+    var max = Math.max.apply(null, number);
+    document.write("입력하신 값중 가장 큰 값은"+ max + "입니다.");
+    </script>
+  </body>
+</html>

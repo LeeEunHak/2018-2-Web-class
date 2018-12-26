@@ -1,0 +1,44 @@
+<!-- number_array라는 배열을 생성하여 영어로 "one", "two", "three", "four", "five" 까지
+5개의 요소로 초기화 시킨 후 각 요소를 출력한다. 또한, 오름 차순으로 정렬하여 출력하고,
+내림차순으로 정렬하여 또 출력한다 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>10_2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var number_array = new Array
+
+      number_array[0] = "one"
+      number_array[1] = "two"
+      number_array[2] = "three"
+      number_array[3] = "four"
+      number_array[4] = "five"
+
+      function print_array(a, name) {
+      for(i=0;i<a.length;i++) {
+        document.write(name + "[" + i + "]: ");
+        if (typeof(a[i]) == "string")
+          document.write("\"" + a[i] + "\" <br/>");
+        else
+          document.write(a[i] + " <br/>");
+        }
+      }
+
+      document.write("그대로 출력 <br>")
+      print_array(number_array, "number_array")
+
+      number_array.sort()
+      document.write("<br> 오름차순 정렬 <br>")
+      print_array(number_array, "number_array")
+
+      number_array.reverse()
+      document.write("<br> 내림차순 정렬 <br>")
+      print_array(number_array, "number_array")
+
+    </script>
+  </body>
+</html>

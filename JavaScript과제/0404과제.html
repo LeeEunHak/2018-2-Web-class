@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>개발자들 과제2</title>
+  </head>
+  <body>
+    <h2>개발자들 과제2</h2>
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>개인정보</legend>
+        성명: <input type="text" name="name" value="이름입력"><br>
+        학부:
+        <input type="radio" name="department" value="it" id="it">
+        <label for="it">IT</label>
+        <input type="radio" name="department" value="hu" id="hu">
+        <label for="hu">인문</label>
+        <input type="radio" name="department" value="so" id="so">
+        <label for="so">사회</label>
+        <input type="radio" name="department" value="me" id="me">
+        <label for="me">미컨</label>
+        <br>
+        학번:
+        <select class="" name="">
+          <option value="16">16학번</option>
+          <option value="17">17학번</option>
+          <option value="18">18학번</option>
+          <option value="19">19학번</option>
+        </select>
+      </fieldset>
+      <br>
+        <fieldset>
+          <legend>주문</legend>
+          종류:
+          <input type="radio" name="wear" value="t1">맨투맨
+          <input type="radio" name="wear" value="t2">후드티
+          <br>
+          색상(중복가능):
+          <input type="checkbox" name="color" value="yellow">노랑
+          <input type="checkbox" name="color" value="blue">파랑
+          <input type="checkbox" name="color" value="grey">회색
+          <input type="checkbox" name="color" value="black">검정
+          <br>
+          요구사항:<br>
+          <textarea name="comment" rows="8" cols="50">전달하실 내용을 적으세요.</textarea>
+        </fieldset>
+        <hr>
+        <input type="submit" name="" value="제출">&nbsp;
+        <input type="reset" name="" value="초기화">&nbsp;
+        <input type="button" name="" value="확인" onclick="alert('내용 확인.')">
+    </form>
+  </body>
+</html>
